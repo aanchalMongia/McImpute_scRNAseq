@@ -3,11 +3,14 @@
 
 Click [here](www.google.com) for paper.
 
-#### Implementation
+#### Brief Description
 McImpute takes raw gene expression Data (cells x genes) as input. It pre-processed the data (see paper for detailed steps) and applies nuclear norm minimization to recover the full expression data, filling in the dropouts. 
 
-Code:
+#### Implementation
+Running the script would read the count matrix, processes it, call mcImpute and place the recovered matrices in a folder 'RecoveredMatrices'
 > run.m
+
+#### Testing
 > rng(0);
 >actual_labels=eval(['get_numeric_labels_' dataname '( dataname , data_dir )']) ; 
 
