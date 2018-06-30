@@ -18,7 +18,7 @@ Fix seed for reproducibility
 Get annotations (single cell types)
 >actual_labels=eval(['get_numeric_labels_' dataname '( dataname , data_dir )']) ; 
 
-Run kmeans on after applying PCA on scRNA0-seq data
+Run kmeans clustering algorithm after applying PCA on scRNA-seq data
 > list_ni=[]; list_mc=[];<br/>
 > for (i=1:100) <br/>
 > loc=randperm(length(actual_labels),length(unique(actual_labels)));<br/>
