@@ -19,12 +19,9 @@ Get annotations (single cell types)
 >actual_labels=eval(['get_numeric_labels_' dataname '( dataname , data_dir )']) ; 
 
 Run kmeans on after applying PCA on scRNA0-seq data
-> list_ni=[]; list_mc=[];
-
-> for (i=1:100)  
-
->   loc=randperm(length(actual_labels),length(unique(actual_labels)));
-
+> list_ni=[]; list_mc=[];<br/>
+> for (i=1:100) <br/>
+> loc=randperm(length(actual_labels),length(unique(actual_labels)));<br/>
 >   load(['processedData/' dataname '_processed.mat']); <br/>
 >   ari_ni=call_kmeans(processed_data,'PCA', loc ,actual_labels); list_ni=[list_ni ari_ni];      <br/>
 >   ari_mc=call_kmeans(data_recovered,'PCA', loc ,actual_labels); list_mc=[list_mc ari_mc];     <br/>
