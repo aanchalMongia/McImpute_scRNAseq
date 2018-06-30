@@ -2,9 +2,7 @@
 ## Matrix completion based tool for imputation of scRNA-seq data 
 A low-rank matrix completion technique to impute dropouts in single cell expression data. 
 
-
-###### Paper:
-> 'add link'
+[Link to paper](add link) 
 
 #### Dependencies 
 The algorithm requires "Propack" and "sparco" packages (placed in "Dependencies" folder).
