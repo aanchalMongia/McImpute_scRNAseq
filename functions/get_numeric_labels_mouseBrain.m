@@ -1,10 +1,9 @@
 
-function [ labels , gt_labels ] = get_numeric_labels_mouseBrain( n  )
-%GET_NUMERIC_LABELS_MOUSEBRAIN Summary of this function goes here
-%   Detailed explanation goes here
+function [ labels , gt_labels ] = get_numeric_labels_Mousebrain(  dataname, data_dir )
 
-data_dir='D:/AanchalMongia_phdClg/Phd/DATA_SINGLE_CELL/'
-fid=fopen([data_dir 'annotations/MouseBrain_labels_sorted.csv']);
+n=7;
+
+fid=fopen([data_dir 'annotations/' dataname '_annotations.csv']);
 gt=textscan(fid,'%s%s','Delimiter',',');
 gt_labels=gt{1};
 if n==7

@@ -1,10 +1,8 @@
-function [ actual_labels ] = get_numeric_labels_jurkat(  )
+function [ actual_labels ] = get_numeric_labels_jurkat(dataname, data_dir  )
 %GET_NUMERIC_LABELS_JURKAT Summary of this function goes here
 %   Detailed explanation goes here
 
-
-data_dir='D:/AanchalMongia_phdClg/Phd/DATA_SINGLE_CELL/'
-fid=fopen([data_dir 'annotations/Jurkat_annotation_nofilter.csv']);
+fid=fopen([data_dir 'annotations/' dataname '_annotations.csv']);
 gt=textscan(fid,'%s','Delimiter',',');
 gt_labels=gt{1};
 keySet =   { 'species1','species2'};

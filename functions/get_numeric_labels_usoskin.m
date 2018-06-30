@@ -1,10 +1,8 @@
-function [labels] = get_numeric_labels_usoskin()
+function [labels] = get_numeric_labels_usoskin(dataname, data_dir)
 
 
 
-data_dir='D:/AanchalMongia_phdClg/Phd/DATA_SINGLE_CELL/'
-
-load([data_dir 'annotations/Usoskin_annotations.mat']);
+load([data_dir 'annotations/' dataname '_annotations.mat']);
 gt_labels=anno;
 save('Temp/usoskin_labelNames.mat','gt_labels');
 keySet =   { 'NP','TH','NF','PEP'}; %cyan, red, blue, green

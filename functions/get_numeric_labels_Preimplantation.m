@@ -1,9 +1,8 @@
-function [ labels ] = get_numeric_labels( )
+function [ labels ] = get_numeric_labels( dataname, data_dir)
 %GET_NUMERIC_LABELS Summary of this function goes here
 %   Detailed explanation goes here
 
-data_dir='D:/AanchalMongia_phdClg/Phd/DATA_SINGLE_CELL/'
-fid=fopen([data_dir 'annotations/zygote_annotations.csv']);
+fid=fopen([data_dir 'annotations/' dataname '_annotations.csv']);
 gt=textscan(fid,'%s','Delimiter',',');
 gt_labels=gt{1};
 keySet =   { '16cell','4cell','8cell','BXC', 'C57twocell','early2cell', 'earlyblast','fibroblast','late2cell','lateblast','mid2cell','midblast','zygote'};
