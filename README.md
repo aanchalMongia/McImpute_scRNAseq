@@ -1,6 +1,5 @@
 # mcImpute
 ## Matrix completion based tool for imputation of scRNA-seq data 
-A low-rank matrix completion technique to impute dropouts in single cell expression data. 
 
 Click [here](www.google.com) for paper.
 
