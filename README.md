@@ -21,13 +21,13 @@ Get annotations (single cell types)
 Run kmeans on after applying PCA on scRNA0-seq data
 > list_ni=[]; list_mc=[];
 
-> for (i=1:100) 
+> for (i=1:100)  
 
 >   loc=randperm(length(actual_labels),length(unique(actual_labels)));
 
->   load(['processedData/' dataname '_processed.mat']);
->   ari_ni=call_kmeans(processed_data,'PCA', loc ,actual_labels); list_ni=[list_ni ari_ni];      
->   ari_mc=call_kmeans(data_recovered,'PCA', loc ,actual_labels); list_mc=[list_mc ari_mc];
-> end
-> avg_ari_ni=mean(list_ni)
-> avg_ari_mc=mean(list_mc)
+>   load(['processedData/' dataname '_processed.mat']); <br/>
+>   ari_ni=call_kmeans(processed_data,'PCA', loc ,actual_labels); list_ni=[list_ni ari_ni];      <br/>
+>   ari_mc=call_kmeans(data_recovered,'PCA', loc ,actual_labels); list_mc=[list_mc ari_mc];     <br/>
+> end <br/>
+> avg_ari_ni=mean(list_ni)<br/>
+> avg_ari_mc=mean(list_mc)<br/>
