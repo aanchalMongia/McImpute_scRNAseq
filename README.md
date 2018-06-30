@@ -1,5 +1,5 @@
 # mcImpute
-## Matrix completion based tool for imputation of scRNA-seq data 
+## Tool for imputation of scRNA-seq data 
 
 Click [here](www.google.com) for paper.
 
