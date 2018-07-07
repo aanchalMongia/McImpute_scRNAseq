@@ -1,4 +1,4 @@
-function [X]  = IST_eMC(y,M,sizeX,rankX)
+function [X]  = IST_MC(y,M,sizeX,rankX)
 
 % Matrix Completion via Iterated Soft Thresholding
 % min nuclear-norm(X) subject to ||y - M(X)||_2<err
@@ -13,8 +13,6 @@ function [X]  = IST_eMC(y,M,sizeX,rankX)
 % insweep - maximum number of internal sweeps for solving ||y - M(X)||_2 + lambda nuclear-norm(X) (default 200)
 % tol - tolerance (default 1e-4)
 % decfac - decrease factor for cooling lambda
-
-% Copyright (c) Angshul Majumdar 2010
 
     err = 1e-12;
     x_initial = zeros(prod(sizeX),1); % leave it as it is
