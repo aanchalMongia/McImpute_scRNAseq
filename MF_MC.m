@@ -9,7 +9,6 @@ function [X, U, V] = MF_MC(y,M,sizeX,rankr)
 % y - sampled entries
 
 
-% Copyright (c) Angshul Majumdar 2010
 
 err = 1e-6;
 x = rand(prod(sizeX),1);
