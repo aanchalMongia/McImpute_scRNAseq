@@ -2,6 +2,7 @@
 ## A matlab tool for imputation of scRNA-seq data 
 
 Click [here](https://www.biorxiv.org/content/early/2018/07/14/361980) for paper.
+This work has been accepted by "Frontiers in genetics". (To be published soon)
 
 ### Brief Description
 McImpute takes raw gene expression Data (cells x genes) as input. It pre-processed the data (see paper for detailed steps) and applies nuclear norm minimization to recover the full expression data, filling in the dropouts. 
