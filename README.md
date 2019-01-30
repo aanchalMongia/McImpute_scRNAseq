@@ -1,7 +1,7 @@
 # mcImpute
 ## A matlab tool for imputation of scRNA-seq data 
 
-Paper link: [mcImpute_Frontiers](https://www.frontiersin.org/articles/10.3389/fgene.2019.00009/full)
+Paper link: [A.  Mongia,  D.  Sengupta,  and  A.  Majumdar,  “Mcimpute:Matrix completion based imputation for single cell rna-seqdata,”Frontiers in genetics, 2019](https://www.frontiersin.org/articles/10.3389/fgene.2019.00009/full)
 
 ### Brief Description
 McImpute takes raw gene expression Data (cells x genes) as input. It pre-processed the data (see paper for detailed steps) and applies nuclear norm minimization to recover the full expression data, filling in the dropouts. 
