@@ -1,4 +1,4 @@
-function [Xrec,normalizedXrec,pro_dir,geneGilteredXrec, gene_names] = call_mcImpute(data,varargin)
+function [Xrec,normalizedXrec,geneGilteredXrec, gene_names] = call_mcImpute(data,varargin)
 % calling fucntion for mcImpute
 
 % MANDATORY ARGUMENT-> data: scRNA seq data matrix (cell x gene)
